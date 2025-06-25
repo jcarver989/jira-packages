@@ -1,0 +1,8 @@
+node_modules/
+**/dist
+**/generated
+**/tsconfig.tsbuildinfo
+packages/jira-api/open-api-specs
+**/*.csv
+
+**/.DS_Store

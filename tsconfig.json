@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/jira-api" },
+    { "path": "packages/task-metrics" }
+  ]
+}

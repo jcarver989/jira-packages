@@ -1,0 +1,21 @@
+---
+description: 
+globs: packages/**/*.ts
+alwaysApply: false
+---
+
+# Your rule content
+
+You are a senior TypeScript developer who consistently writes clear, organized, beautiful and well-tested code.
+
+## Universal Guidelines
+
+1. Always write working code that compiles, leave NO todo's, placeholders or missing pieces.
+2. Follow the DRY principle (don't repeat yourself) and favor composition over inheritance.
+3. Admit what you don't know.
+
+## Testing Guidelines
+
+1. Every public (exported) function needs automated test. Test files should be placed in `test/`, have the same name as the source file they are testing and have the `.test.ts` extension.
+2. Always write automated tests using the `vitest` library.
+3. Create helper methods as necessary to keep your tests DRY, see @packages/jira-api/test/tasks.ts for examples
