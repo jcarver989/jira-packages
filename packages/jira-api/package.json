@@ -1,0 +1,41 @@
+{
+  "name": "@jira-apis/jira-api",
+  "version": "0.0.13",
+  "description": "Jira API bindings for TypeScript, generated from their OpenAPI spec",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./jira-cloud": {
+      "types": "./dist/generated/jira-cloud/index.d.ts",
+      "require": "./dist/generated/jira-cloud/index.js",
+      "default": "./dist/generated/jira-cloud/index.js"
+    },
+    "./jira-software": {
+      "types": "./dist/generated/jira-software/index.d.ts",
+      "require": "./dist/generated/jira-software/index.js",
+      "default": "./dist/generated/jira-software/index.js"
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "npx tsc -b",
+    "test": "npx vitest --run",
+    "release": "npm publish --access public"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.16.2",
+    "@types/node": "^22.13.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
+  }
+}
