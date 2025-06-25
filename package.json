@@ -1,0 +1,6 @@
+{
+  "name": "jira-apis",
+  "workspaces": [
+    "packages/*"
+  ]
+}
