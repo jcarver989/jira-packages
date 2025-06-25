@@ -1,0 +1,30 @@
+export const defaultIssueFields = [
+  "id",
+  "key",
+  "summary",
+  "assignee",
+  "resolution",
+  "resolutiondate",
+  "status",
+  "issuetype",
+  "duedate",
+  "parent",
+  "created",
+  "labels",
+]
+
+export const defaultEpicFields = [
+  "id",
+  "key",
+  "summary",
+  "assignee",
+  "created",
+  "resolution",
+  "resolutiondate",
+  "status",
+  "issuetype",
+  "duedate",
+  "parent",
+  "rank",
+  "labels",
+]

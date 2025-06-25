@@ -1,0 +1,43 @@
+{
+  "name": "@jira-apis/task-metrics",
+  "version": "0.0.16",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./util": {
+      "types": "./dist/util/index.d.ts",
+      "require": "./dist/util/index.js",
+      "default": "./dist/util/index.js"
+    },
+    "./jira": {
+      "types": "./dist/jira/index.d.ts",
+      "require": "./dist/jira/index.js",
+      "default": "./dist/jira/index.js"
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "prebuild": "tsc -b --clean",
+    "build": "tsc -b",
+    "test": "vitest --run",
+    "prerelease": "npm run build && npm run test",
+    "release": "npm publish"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "description": "",
+  "dependencies": {
+    "@jira-apis/jira-api": "^0.0.13"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0",
+    "vitest": "^3.0.7"
+  }
+}
