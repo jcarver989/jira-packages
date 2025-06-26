@@ -235,4 +235,4 @@ This package is part of the jira-apis monorepo. Please refer to the main reposit
 
 ## License
 
-Apache-2.0 
+ISC 
